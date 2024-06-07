@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            border: 5px solid black;
+        }
+
         #contact-form {
             margin: 0 auto;
-            display: block;
-            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 20px;
             padding: 30px;
+            width: 700px;
+
         }
         #Enviar1 {
-            margin-top: 10px;
+            align-items: flex-end;
             width: 140px;
             height: 30px;
             color: aliceblue;
@@ -20,6 +29,7 @@
             border: none;
             font-size: 16px;
             transition: transform 0.3s ease;
+            
         }
         #Enviar1:hover {
             transform: scale(1.1);
@@ -30,6 +40,7 @@
             width: 300px;
             height: 30px;
             border: 3px solid #3b708d;
+            margin-top: 10px;
         }
         #titulo {
             width: 700px;
@@ -39,24 +50,28 @@
             margin-right: auto;
             color: aliceblue;
         }
-        .baixo {
-            margin-top: 2px;
+        .esq {
+           
+        }
+        #message {
+            width: 300px;
+            height: 127px;
         }
     </style>
 </head>
 <body>
     <h1 id="titulo">Formulário de contato</h1>
     <form id="contact-form">
-        <input type="text" id="name" name="name" placeholder="Nome*" required>
-
-        <input type="text" id="phone" name="phone" placeholder="Telefone*" required>
-            <br>
-        <div class="baixo">
-        <input type="email" id="email" name="email" placeholder="Email*" required>
-
-        <input type="text" id="message" name="message" placeholder="Mensagem*" required>
+        <div class="esquerda">
+            <input type="text" class="esq" id="name" name="name" placeholder="Nome*" required>
+                <br>
+            <input type="text" class="esq" id="phone" name="phone" placeholder="Telefone*" required>
+                <br>
+            <input type="email" class="esq" id="email" name="email" placeholder="Email*" required>
         </div>
-            <br>
+        <div class="direita">
+            <input type="text" id="message" name="message" placeholder="Mensagem*" required>
+        </div>
         <button id="Enviar1" type="submit">Enviar</button>
     </form>
 </body>
