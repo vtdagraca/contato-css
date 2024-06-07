@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #contact-form {
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            padding: 30px;
+        }
+        #Enviar1 {
+            margin-top: 10px;
+            width: 140px;
+            height: 30px;
+            color: aliceblue;
+            background-color: #3b708d;
+            border: none;
+            font-size: 16px;
+            transition: transform 0.3s ease;
+        }
+        #Enviar1:hover {
+            transform: scale(1.1);
+            background-color: #012b42;
+        }
+        input {
+            font-size: 15px;
+            width: 300px;
+            height: 30px;
+            border: 3px solid #3b708d;
+        }
+        #titulo {
+            width: 700px;
+            text-align: center;
+            background-color: #3b708d;
+            margin-left: auto;
+            margin-right: auto;
+            color: aliceblue;
+        }
+        .baixo {
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Formulário de contato</h1>
+    <form id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Nome*" required>
+
+        <input type="text" id="phone" name="phone" placeholder="Telefone*" required>
+            <br>
+        <div class="baixo">
+        <input type="email" id="email" name="email" placeholder="Email*" required>
+
+        <input type="text" id="message" name="message" placeholder="Mensagem*" required>
+        </div>
+            <br>
+        <button id="Enviar1" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
